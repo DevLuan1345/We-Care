@@ -52,4 +52,4 @@ Este projeto demonstra a aplicação prática de HTML e CSS na criação de uma 
 
 Repositório: https://github.com/DevLuan1345/We-Care
 
-Deploy do Projeto: https://devluan1345.github.io/We-Care/
+Deploy do Projeto: https://devluan1345.github.io/We-Care/ 
