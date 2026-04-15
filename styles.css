@@ -5,9 +5,21 @@
     box-sizing: border-box;
 }
 
-header {
-    margin: 44px 0 144px 76px;
+body {
+ width: 100%;
+ overflow-x: hidden;
 }
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    margin: 0; 
+}
+
 
 .link-header {
    font-weight: 600;
@@ -31,16 +43,22 @@ header {
     cursor: pointer;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
 .img-log {
-    width: 568px;
-    height: 500px;
-    margin-left: 125px;
-    display: inline-block;
+    width: 90%;
+    max-width: 300px;
 }
 
 section {
-    display: inline-block;
-    margin-left: 86px;
+    max-width: 500px;
 }
 
 h1 {
@@ -62,7 +80,6 @@ p {
     font-size: 24px;
     line-height: 29px;
     color: #848484;
-    width: 515px;
     margin-top: 32px;
     margin-bottom: 65px;
 }
@@ -81,17 +98,17 @@ p {
     color: #000000;
 }
 
-/* ========================= */
-/* 📱 MOBILE (até 768px) */
+
+/* 📱 MOBILE */
 /* ========================= */
 
-@media (max-width: 788px) {
+@media (max-width: 768px) {
 
     header {
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
         gap: 10px;
         padding: 20px;
+        text-align: center;
     }
 
     .link-header {
@@ -107,8 +124,8 @@ p {
 
     main {
         flex-direction: column;
-        text-align: center;
         padding: 20px;
+        text-align: center;
     }
 
     .img-log {
@@ -124,7 +141,7 @@ p {
     }
 
     p {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .button-main {
@@ -135,14 +152,18 @@ p {
 }
 
 /* ========================= */
-/* 📲 TABLET (769px até 1024px) */
+/* 📲 TABLET */
 /* ========================= */
 
 @media (min-width: 769px) and (max-width: 1024px) {
 
     main {
-        gap: 20px;
-        padding: 0 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .img-log {
+        max-width: 400px;
     }
 
     h1 {
@@ -150,33 +171,6 @@ p {
     }
 
     h2 {
-        font-size: 32px;
-    }
-
-    p {
-        font-size: 16px;
-    }
-
-    .img-log {
-        max-width: 400px;
-    }
-}
-
-/* ========================= */
-/* 💻 TELAS GRANDES */
-/* ========================= */
-
-@media (min-width: 1400px) {
-
-    h1 {
-        font-size: 90px;
-    }
-
-    h2 {
-        font-size: 50px;
-    }
-
-    .img-log {
-        max-width: 600px;
+        font-size: 30px;
     }
 }
